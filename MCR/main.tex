@@ -1,0 +1,476 @@
+\documentclass{UNSAM}
+\usepackage[utf8]{inputenc}
+
+\addbibresource{bibliografia.bib}
+
+\makeglossaries
+\input{acronimos.tex}
+\input{glosario.tex}
+
+\begin{document}
+\includepdf[pages=1]{portada.pdf}
+\titulo{U-SPACE-FACT}
+\subtitulo{Revisión de Concepto de Misión}
+\fecha{\today}
+\docn{2}
+
+\setcounter{page}{1}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\printglossary[type=\acronymtype]
+
+
+\chapter{Planteamiento de la Misión}
+
+\section{Necesidad}
+Existen manufacturas que necesitan de ciertas condiciones (microgravedad) que son fácilmente obtenibles en órbita.
+La cristalografía tiene estos tipos de problemas.
+\\
+En condiciones normales (gravedad terrestre) hay 2 grandes problemas
+\begin{itemize}
+    \item \textbf{Sedimentación y convección:}durante el crecimiento de cristales, la gravedad provoca que las 
+      moléculas se desplacen por sedimentación o corrientes de convección térmica.
+    \item \textbf{Cristalografía de Rayos X:} Los cristales con defectos dan patrones de difracción menos precisos.
+\end{itemize}
+Esto puede generar defectos estructurales, zonas de impurezas o crecimientos irregulares.
+\\
+¿Por qué importa esto?
+\\
+En campos como la farmacéutica, nanotecnología o materiales avanzados, una pequeña variación en la estructura 
+cristalina puede cambiar completamente el comportamiento del producto.
+
+
+\section{Contexto}
+La NASA ha seleccionado nuevas propuestas dentro del programa \acrfull{inspa}, cuyo objetivo principal es avanzar en 
+el desarrollo de capacidades industriales en órbita baja terrestre (\acrshort{leo}). Estas iniciativas buscan 
+transformar la microgravedad en una herramienta productiva, permitiendo la fabricación de materiales y productos con 
+prestaciones superiores a las obtenidas en la Tierra.
+\\
+Las propuestas seleccionadas se centran en dos áreas de alto impacto:
+\begin{itemize}
+\item Producción de fibras ópticas avanzadas, especialmente del tipo ZBLAN. En ausencia de gravedad, el proceso de 
+  fabricación reduce significativamente defectos como cristalización interna e impurezas, lo que permite obtener fibras 
+    con mayor calidad y eficiencia para aplicaciones en telecomunicaciones y transmisión de datos.
+
+\item Aplicaciones biomédicas basadas en células madre, orientadas al desarrollo de tejidos y modelos celulares 
+  tridimensionales. La microgravedad favorece la formación de estructuras más complejas y realistas, con potencial uso 
+    en investigación médica, tratamientos y desarrollo farmacéutico.
+\end{itemize}
+La NASA destaca que estas actividades representan un avance concreto hacia la creación de una economía en \acrshort{leo}.
+Para que esta economía sea sostenible, resulta esencial desarrollar tecnologías específicas de manufactura orbital 
+que sean escalables, repetibles y con niveles crecientes de automatización. Asimismo, se resalta la necesidad de 
+reducir la dependencia de operaciones tripuladas, promoviendo sistemas capaces de producir y retornar productos a la 
+Tierra con mínima intervención humana.
+\\
+\href{https://www.nasa.gov/humans-in-space/commercial-space/nasa-selects-proposals-in-space-development-optical-fibers-stem-cells-enable-low-earth-orbit-leo-economy}{NASA}
+
+
+
+\section{Metas}
+\begin{itemize}
+  \item Fabricar manufacturas en órbita \acrshort{leo}.
+    \item Competir de igual a igual con grandes empresas.
+    \item Establecer estándares para fabricación en masa y comercializar patentes.
+    \item Minimizar riesgos en todo el ciclo de vida del producto.
+\end{itemize}
+
+\section{Objetivos}
+\begin{itemize}
+  \item Transportar y proveer servicios a una fábrica en órbita \acrshort{leo}.
+    \item Recuperar los productos fabricados.
+    \item Insertarse en el mercado de fabricación en órbita.
+    \item Desarrollar métodos y tecnologías eficientes, rentables y reutilizables.
+    \item Colaborar con universidades y lograr acuerdos de financiamiento futuros.
+\end{itemize}
+
+\section{Hipótesis}
+La baja del costo de lanzamiento va a generar que sea rentable.
+\\
+Impacto sobre la cristalización:
+\\
+\\
+La cristalización macromolecular busca formar cristales altamente ordenados capaces de difractar rayos X o neutrones 
+con buena resolución. La calidad del cristal depende en gran medida de los procesos de transporte y crecimiento dentro 
+de la solución, y estos pueden cambiar cuando se reduce la aceleración, como en microgravedad.
+\\
+\\
+En microgravedad disminuyen la convección y la sedimentación, por lo que el transporte de macromoléculas hacia el 
+cristal queda dominado por difusión. Esto puede reducir la incorporación de agregados grandes e impurezas, aunque los 
+resultados dependen de la concentración y de la pureza inicial de la muestra, que se vuelve un factor crítico para 
+obtener beneficios reales.
+\\
+\\
+La nucleación inicial no cambia de forma directa, ya que está gobernada por fuerzas intermoleculares que no dependen 
+de la gravedad. Sin embargo, la microgravedad puede reducir la nucleación secundaria al eliminar flujos de fluido que, 
+en la Tierra, desprenden fragmentos cristalinos que actúan como nuevos núcleos.
+\\
+\\
+Durante el crecimiento, la ausencia de convección favorece la formación de una zona de agotamiento estable alrededor 
+del cristal, permitiendo un crecimiento más lento y ordenado. Esto facilita la expulsión de unidades mal incorporadas, 
+mejorando el orden interno.
+\\
+\\
+Los estudios muestran que los cristales crecidos en microgravedad suelen presentar menor mosaicidad, dominios más 
+homogéneos y mayor resolución de difracción, lo que se traduce en datos estructurales de mayor calidad. La importancia 
+de estos efectos se vuelve especialmente evidente cuando se consideran futuras aplicaciones industriales y biomédicas 
+que dependen de estructuras cristalinas precisas \cite{snell2021microgravity}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1]{Imagenes/Figura que no entiendo.png}
+    \caption{Estudios experimentales de cristales crecidos en microgravedad muestran dominios más uniformes y una mosaicidad
+    significativamente menor, como indican los perfiles de rocking y los análisis estadísticos de reflexiones. Esto
+    produce una mayor intensidad de las reflexiones y, en consecuencia, una mejor relación señal–ruido. Los resultados
+    observados en cristales de lisozima se confirmaron posteriormente en cristales de insulina mediante una metodología
+    mejorada .}
+    \label{fig:hipotesis}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{Imagenes/Diferencia.jpg}
+    \caption{Microscopio de escaneo por electrones: $\mu$g(izquierda) y $1$g(derecha)\cite{torres2016experimental}}
+    \label{fig:Diferencia de cristalisacion}
+\end{figure}
+
+\section{Misión}
+Transportar y colocar en órbita \acrshort{leo} un satélite equipado con una fábrica, monitorear dicha fábrica durante el
+tiempo requerido para que produzca la cantidad especificada de producto en microgravedad, almacenar los productos
+obtenidos bajo condiciones controladas y finalmente reingresar el satélite junto con los productos de forma segura a 
+la Tierra para su recuperación y uso.
+
+
+\section{Restricciones}
+\begin{itemize}
+    \item Fabricación de algunas manufacturas.
+    \item Limitaciones de espacio en cápsula para albergar fábricas de mayor tamaño.
+    \item Presupuesto para la misión completa, que sea rentable.
+    \item Mercado reducido y específico.
+    \item Importación de materiales y tecnología.
+\end{itemize}
+
+\section{Autoridades}
+\begin{itemize}
+  \item Lanzamiento:  el transportador – Responsable:Space X
+  Durante toda la fase de lanzamiento, incluidos integración en el vehículo, validaciones previas, carga en la cofia, cronología 
+  de despegue y ascenso, la responsabilidad operativa y legal recae completamente en el proveedor de lanzamiento.
+  Este actor garantiza la seguridad del vehículo, el cumplimiento normativo y la integridad del payload hasta la separación en órbita.
+
+\item Operación de la cápsula en órbita – Responsable: X \acrshort{unsam}
+  Una vez que la cápsula se separa del lanzador e ingresa en régimen orbital, el control y la autoridad operacional pasan al Grupo X.
+
+  \item Operación de la fábrica interna – Responsable: el cliente
+  La carga útil (la “fábrica orbital”) es operada exclusivamente por el cliente.Grupo X provee los medios (energía, 
+  telemetría, ambiente controlado), pero no interviene en las decisiones operativas internas del payload.
+
+\item Reingreso, recuperación y custodia – Responsable: Grupo X (\acrshort{unsam})
+  Al finalizar la campaña, Grupo X ejecuta la maniobra de reingreso, gestiona la trayectoria balística y supervisa la
+  apertura de sistemas de frenado.
+  Tras el aterrizaje, Grupo X asume la logística de recuperación de la capsula, aseguramiento del sitio de aterrizaje,
+  verificación de integridad y traslado seguro de la cápsula hasta la base de operaciones.
+  El cliente toma posesión del producto una vez finalizados los procedimientos de entrega controlada.
+
+\end{itemize}
+
+\section{ConOps (Concepto de Operación)}
+El proceso se divide en 8 fases principales:
+
+\begin{enumerate}
+  \item \textbf{Lanzamiento y separación}: El satélite U-SPACE-FACT es lanzado y colocado en \acrshort{leo}. Condición 
+    de entrada: separación confirmada y telemetría nominal de bus (\acrshort{eps}, \acrshort{obc}, \acrshort{gnc}).
+  \item \textbf{Fase de comisionado (\acrshort{leo} early ops)}: Inicialización de subsistemas y verificación de salud 
+    (health check) de la fábrica (cámaras, controladores Peltier, actuadores, cartuchos).
+    \item \textbf{Inicio de operaciones de fabricación}: Carga de la receta, puesta en marcha del primer ciclo, 
+      monitorización en tiempo real y test de funcionamiento inmediato tras el primer ciclo.
+    \item \textbf{Campaña de producción}: Operar por $N$ días o hasta alcanzar la masa/número de muestras requerido. 
+      Registro continuo ALCOA+ y inspecciones intermedias on-orbit.
+    \item \textbf{Verificación de cantidad y calidad}: Ejecutar rutina de verificación final on-orbit. Decisión de 
+      aceptación para reentrada si calidad $\geq$ criterios mínimos, sino se decide retrabajo/descarte/retención.
+    \item \textbf{Preparación para reingreso}: Transferencia y sellado de muestras, acondicionamiento, y configuración de 
+      la cápsula para desacoplamiento y maniobra de reentrada.
+    \item \textbf{Maniobra de reingreso y recuperación}: Ejecución de desorbitación y reingreso seguro. Condición de éxito: 
+      cápsula recuperada y muestras en condición aceptable.
+    \item \textbf{Post-recuperación y cierre de campaña}: Transporte a instalaciones de análisis en Tierra, análisis full-
+      panel on-ground y reporte de comparabilidad.
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.62]{Imagenes/ConOps.png}
+    \caption{Concepto de Operación 1}
+    \label{fig:Concepto de Operación}
+\end{figure}
+
+\newpage
+\chapter{Desglose del Sistema}
+
+\section{Diagrama de bloques funcional del sistema}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Imagenes/Feature_Context.png}
+    \caption{Concepto funcional}
+    \label{fig:Concepto funcional}
+\end{figure}
+
+\section{Diagrama de subsistemas}
+Subsistemas:
+
+\begin{itemize}
+  \item \acrfull{obc}: coordina y ejecuta el control de misión, administra datos y gestiona la operación del sistema.
+  \item \acrfull{eps}: Genera, almacena y distribuye la energía eléctrica necesaria para todos los subsistemas.
+  \item \acrfull{gnc}: Determina la actitud y posición del vehículo y ejecuta maniobras para mantener la orientación y 
+    trayectoria requeridas.
+  \item \acrfull{ttyc}: Mantiene el enlace de comunicaciones con tierra, transmitiendo telemetría y recibiendo comandos.
+  \item \acrfull{tcs}: Regula la temperatura del vehículo y del payload para mantenerlos dentro de rangos operativos seguros.
+  \item Payload: Realiza el proceso de fabricación en microgravedad y produce el output utilizable por el cliente.
+  \item Reentrada: Gestiona el retorno atmosférico y asegura la desaceleración, protección térmica y recuperación segura.
+  \item Estructura: Provee soporte mecánico, protege los componentes internos y transmite las cargas del lanzamiento, 
+    operación y reentrada.
+\end{itemize}
+
+La figura \ref{fig:subsistemas} presenta un diagrama funcional de subsistemas, centrado en las interacciones operativas entre los 
+elementos principales de la misión. El objetivo no es mostrar la totalidad del equipamiento embarcado, sino 
+representar cómo los subsistemas intercambian información, control y recursos durante el funcionamiento nominal.
+
+Ciertos elementos físicos —como la estructura, el termo–óptico o recubrimientos pasivos— no se incluyen aquí, ya que, 
+si bien son indispensables desde el punto de vista ingenieril, no intervienen directamente en los flujos funcionales 
+que este esquema busca destacar. Su presencia se asume como parte del soporte básico de la plataforma.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Imagenes/Logical_Boundary.png}
+    \caption{Diagrama de subsistemas}
+    \label{fig:Diagrama de subsistemas}
+    \label{fig:subsistemas}
+\end{figure}
+
+\section{Diagrama de N2 (Interfaces)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Imagenes/n2.png}
+    \caption{Diagrama N2}
+    \label{fig:Diagrama N2}
+\end{figure}
+
+\newpage
+\chapter{Ambiente de Misión}
+
+\section{Fase de Lanzamiento}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Imagenes/fase_lanzamiento.png}
+\end{figure}
+\section{Fase de Órbita}
+El ambiente de operación principal, caracterizado por el vacío, temperaturas extremas y radiación.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Imagenes/fase_orbita.png}
+\end{figure}
+\section{Fase de Reingreso}
+Implica el soporte de las condiciones más extremas de calor y presión.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Imagenes/fase_reingreso.png}
+\end{figure}
+
+\chapter{Planificación del Proyecto}
+
+\section{Work Breakdown Structure (WBS)}
+\begin{enumerate}
+    \item \textbf{U-SPACE-FACT}
+    \begin{enumerate}
+        \item \textbf{Gestión del Proyecto}
+        \item \textbf{Ingeniería de Sistemas}
+        \item \textbf{Plataforma Satelital}
+        \begin{enumerate}
+            \item Estructura
+            \item \acrshort{eps}
+            \item \acrshort{gnc}
+            \item \acrshort{obc}
+        \end{enumerate}
+        \item \textbf{Payload – Laboratorio}
+        \begin{enumerate}
+            \item Control Térmico
+            \item Cámaras
+            \item Algoritmos IA
+        \end{enumerate}
+        \item \textbf{Sistema de Reentrada}
+        \begin{enumerate}
+            \item Escudo térmico
+            \item Sistema de Paracaídas
+            \item Localización
+        \end{enumerate}
+        \item \textbf{Integración y Ensayos}
+    \end{enumerate}
+    \item \textbf{Operaciones}
+    \begin{enumerate}
+        \item Comunicación Tierra
+        \item Monitoreo
+        \item Maniobras
+    \end{enumerate}
+  \item \textbf{Documentación y acrshort{mcr}}
+\end{enumerate}
+
+\chapter{Requerimientos de la Misión}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Imagenes/Concept_Requirements_1.png}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Imagenes/Concept_Requirements_2.png}
+    \caption{Requerimientos}
+    \label{fig:Requerimientos}
+\end{figure}
+
+\chapter{Diagrama de Gantt}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{Imagenes/Diagrama_Gantt_V3.png}
+    \caption{Diagrama de Gantt}
+    \label{fig:Diagrama de Gantt}
+\end{figure}
+
+\newpage
+\chapter{RIESGOS}
+El proyecto opera en un entorno de alta complejidad, siendo fundamental la gestión activa de riesgos para el éxito de la 
+misión, la seguridad del producto final y la integridad de la cápsula de reentrada. Se utiliza una matriz que 
+clasifica los riesgos en niveles de \textbf{Bajo}, \textbf{Aceptable}, \textbf{Tolerable} o \textbf{Alto}, ponderando 
+Probabilidad e Impacto.
+
+El proyecto opera en un entorno de alta complejidad, abarcando desde el lanzamiento hasta el reingreso y la 
+fabricación en condiciones extremas. La identificación y gestión activa de riesgos es fundamental para el éxito de la 
+misión y la seguridad del producto final.
+\\
+Este análisis se centra en evaluar aquellos eventos que podrían comprometer las metas de la misión (principalmente la 
+fabricación en \acrshort{leo} y la recuperación de productos ), la integridad de la cápsula de reentrada , o la 
+planificación del proyecto (WBS).
+\\
+Se utiliza una matriz de riesgo que pondera la Probabilidad y el Impacto, permitiendo clasificar los riesgos en 
+niveles de Bien, Aceptable, Tolerable o Alto. A continuación, se detallan los riesgos clave, con especial atención a 
+las fallas en la separación, la reentrada y la integridad de los componentes críticos:
+
+\begin{itemize}
+\item Componentes defectuosos para fabricar la cápsula.
+\item Demora/aplazamiento para construir la cápsula.
+\item No aprobar los test ambientales de la cápsula.
+\item Demora/aplazamiento para lanzar la cápsula, ejemplo fenómenos climáticos
+\item La fábrica a instalar en la cápsula no cumple con los estándares de medio ambiente y seguridad para la misión.
+\item Falla en el sistema de propulsión de la cápsula: para reposicionar en órbita y hacer reingreso a tierra.
+\item Falla en sistema de paracaídas de la cápsula.
+\item Falla en la etapa de separación entre el spacecraft y la cápsula.
+\item Falla en el módulo de comunicación entre capsula tierra
+\end{itemize}
+
+
+ \textbf{Bajo}, \textbf{Aceptable}, \textbf{Tolerable} o \textbf{Alto}, ponderando Probabilidad e Impacto.
+
+\section{Matriz de Riesgo - Ponderaciones}
+\begin{table}[H]
+\centering
+ \resizebox{\linewidth}{!}{
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{Probabilidad} & \textbf{Mínimo} (1) & \textbf{Moderado} (2) & \textbf{Serio} (3) & \textbf{Elevado} (4) & \textbf{Grande} (5) \\
+\hline
+\textbf{Frecuente} (5) & \cellcolor{yellow} 5 & \cellcolor{yellow} 10 & \cellcolor{orange} 15 & \cellcolor{red} 20 (Alto) & \cellcolor{red} 25 (Alto) \\
+\textbf{Recurrente} (4) & \cellcolor{green} 4 & \cellcolor{yellow}8 & \cellcolor{orange} 12 (Tolerable) & \cellcolor{red} 16 (Alto) & \cellcolor{red}20 (Alto) \\
+\textbf{Posible} (3) & \cellcolor{green} 3 & \cellcolor{yellow} 6 (Aceptable) & \cellcolor{yellow} 9 (Tolerable) & \cellcolor{orange} 12 (Tolerable) & \cellcolor{red} 15 (Alto) \\
+\textbf{Inusual} (2) & \cellcolor{green} 2 (Bajo) & \cellcolor{green} 4 (Aceptable) & \cellcolor{yellow} 6 (Aceptable) & \cellcolor{orange} 8 (Tolerable) & \cellcolor{red} 10 (Tolerable) \\
+\textbf{Remota} (1) & \cellcolor{green} 1 (Bajo) & \cellcolor{green} 2 (Bajo) & \cellcolor{green} 3 (Bajo) & \cellcolor{yellow} 4 (Aceptable) & \cellcolor{orange} 5 (Aceptable) \\
+\hline
+\end{tabular}
+}
+\caption{Clasificación de Nivel de Riesgo}
+\end{table}
+
+\section{Riesgos por Categoría}
+
+\begin{longtable}{|l|c|c|l|}
+\hline
+\textbf{Evento} & \textbf{Probabilidad} & \textbf{Impacto} & \textbf{Nivel de Riesgo} \\
+\hline
+\multicolumn{4}{|l|}{\textbf{General}} \\
+\hline
+RRHH & Posible & Elevado & \cellcolor{orange} Tolerable \\
+Proveedores & Posible & Grande & \cellcolor{red} Alto \\
+Componentes & Inusual & Serio & \cellcolor{yellow} Aceptable \\
+Fallas SW & Remota & Elevado & \cellcolor{yellow} Aceptable \\
+Comunicación & Remota & Serio & \cellcolor{green} Bajo \\
+Competidores & Recurrente & Moderado & \cellcolor{yellow} Aceptable \\
+Operacional & Posible & Elevado & \cellcolor{orange} Tolerable \\
+Climático/Amb & Posible & Elevado & \cellcolor{orange} Tolerable \\
+\hline
+\multicolumn{4}{|l|}{\textbf{RRHH}} \\
+\hline
+Falta de personal especializado & Posible & Elevado & \cellcolor{orange} Tolerable \\
+Rotación de personal & Recurrente & Moderado & \cellcolor{yellow} Aceptable \\
+Sobrecarga laboral & Posible & Moderado & \cellcolor{yellow} Aceptable \\
+Problemas de coordinación & Inusual & Moderado & \cellcolor{green} Bajo \\
+Falta de capacitación & Recurrente & Elevado & \cellcolor{red} Alto \\
+\hline
+\multicolumn{4}{|l|}{\textbf{Proveedores}} \\
+\hline
+Demoras en la entrega & Recurrente & Elevado & \cellcolor{red} Alto \\
+Calidad Inconsistente & Posible & Elevado & \cellcolor{orange} Tolerable \\
+Dependencia de un único proveedor & Inusual & Moderado & \cellcolor{green} Bajo \\
+Riesgo logístico & Recurrente & Serio & \cellcolor{orange} Tolerable \\
+Cambios del proveedor & Remota & Elevado & \cellcolor{yellow} Aceptable \\
+\hline
+\multicolumn{4}{|l|}{\textbf{Componentes}} \\
+\hline
+Sensores térmicos & Inusual & Grande & \cellcolor{red} Alto \\
+Baterías con capacidad insuficiente & Inusual & Elevado & \cellcolor{orange} Tolerable \\
+Compatibilidad Imperfecta & Posible & Moderado & \cellcolor{yellow} Aceptable \\
+Fallas en el sistema de telemetría & Remota & Elevado & \cellcolor{yellow} Aceptable \\
+Degradación térmica del escudo & Inusual & Elevado & \cellcolor{orange} Tolerable \\
+\hline
+\multicolumn{4}{|l|}{\textbf{Comunicación}} \\
+\hline
+Pérdida de enlace por visibilidad & Recurrente & Elevado & \cellcolor{red} Alto \\
+Interferencia RF & Recurrente & Serio & \cellcolor{orange} Tolerable \\
+Pérdida de sincronización temporal & Recurrente & Serio & \cellcolor{orange} Tolerable \\
+Fallas en la estación terrena & Inusual & Elevado & \cellcolor{orange} Tolerable \\
+Degradación por condiciones & Posible & Moderado &\cellcolor{yellow}  Aceptable \\
+\hline
+\multicolumn{4}{|l|}{\textbf{Competidores}} \\
+\hline
+Avances más rápidos de empresas & Recurrente & Serio &  \cellcolor{orange} Tolerable \\
+Competidores generan patentes clave & Inusual & Moderado &\cellcolor{green} Bajo \\
+Captar a nuestros proveedores críticos & Inusual & Elevado & \cellcolor{orange} Tolerable \\
+Competidores con acuerdos gubernamentales & Remota & Moderado & \cellcolor{green} Bajo \\
+\hline
+\multicolumn{4}{|l|}{\textbf{Operacional}} \\
+\hline
+Error en la secuencia & Inusual & Elevado & \cellcolor{orange} Tolerable \\
+Reentrada mal ejecutada & Posible & Moderado & \cellcolor{yellow} Aceptable \\
+Consumo energético mayor & Inusual & Elevado & \cellcolor{orange} Tolerable \\
+Colisión con desechos espaciales & Remota & Elevado & \cellcolor{yellow} Aceptable \\
+Falla del mecanismo de separación & Posible & Grande & \cellcolor{red} Alto \\
+\hline
+\multicolumn{4}{|l|}{\textbf{Software}} \\
+\hline
+Crash del OBC & Posible & Elevado & \cellcolor{orange} Tolerable \\
+Fallas en la sincronización de telemetría & Inusual & Serio & \cellcolor{yellow} Aceptable \\
+Sobreconsumo de CPU & Inusual & Moderado & \cellcolor{green} Bajo \\
+Pérdida o corrupción de datos & Posible & Serio & \cellcolor{yellow} Aceptable \\
+Watchdog mal configurado & Inusual & Moderado & \cellcolor{green} Bajo \\
+\hline
+\multicolumn{4}{|l|}{\textbf{Ambientales}} \\
+\hline
+Radiación espacial & Recurrente & Serio & \cellcolor{orange} Tolerable \\
+Temperaturas extremas & Recurrente & Serio & \cellcolor{orange} Tolerable \\
+Interacción con plasma en reentrada & Inusual & Serio & \cellcolor{yellow} Aceptable \\
+Impacto de micrometeoritos y debris & Posible & Grande & \cellcolor{red} Alto \\
+Contaminación por desgasificación & Remota & Serio & \cellcolor{green} Bajo \\
+\hline
+\caption{Detalle de la Matriz de Riesgo por Evento}
+\end{longtable}
+
+\printbibliography[heading=bibnumbered]
+
+\end{document}
