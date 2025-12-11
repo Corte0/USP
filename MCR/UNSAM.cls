@@ -68,6 +68,10 @@
     \textbf{\@titulo}\\
     \@subtitulo
   }
+  \fancyhead[R]{
+    \@materia\\
+    \@fecha
+  }
   \fancyfoot[C]{Página \thepage\ de \pageref{LastPage}}
   \renewcommand{\headrulewidth}{0pt}
 }
@@ -77,6 +81,7 @@
 \newcommand{\titulo}[1]{\def\@titulo{#1}}
 \newcommand{\@subtitulo}{}  % Inicialmente vacío
 \newcommand{\subtitulo}[1]{\def\@subtitulo{#1}}
+\newcommand{\materia}[1]{\def\@materia{#1}}
 \newcommand{\grupo}[1]{\def\@grupo{#1}}
 \newcommand{\fecha}[1]{\def\@fecha{#1}}
 \newcommand{\docn}[1]{\def\@docn{#1}}
