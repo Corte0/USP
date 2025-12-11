@@ -177,14 +177,14 @@
 \titleformat{name=\chapter,numberless}[block]
   {\normalfont\LARGE\bfseries}{}{0pt}{}
 \titleformat{\chapter}[block]{\normalfont\LARGE\bfseries }{\thechapter\hspace{1em}}{0pt}{}
-\titlespacing*{\chapter}{10pt}{0pt}{20pt}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
 \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
 
 \titleformat{\section} {\normalfont\Large\bfseries } {\thesection  \hspace{1em}}{0pt}{}
-\titlespacing*{\section} {12pt}{18pt plus 2pt minus 2pt}{8pt}
+\titlespacing*{\section} {5pt}{18pt plus 2pt minus 2pt}{8pt}
 
 \titleformat{\subsection} {\normalfont\large\bfseries}{\thesubsection  \hspace{1em}}{0pt}{}
-\titlespacing*{\subsection} {15pt}{12pt plus 1pt minus 1pt}{6pt}
+\titlespacing*{\subsection} {10pt}{12pt plus 1pt minus 1pt}{6pt}
 
 % Índice
 \renewcommand{\contentsname}{Tabla de Contenidos}
