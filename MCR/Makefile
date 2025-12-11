@@ -9,6 +9,12 @@ all: pdf
 pdf:
 	latexmk -pdf $(MAIN) -output-directory=$(OUTDIR) -f --jobname=$(JOB)
 
+quick:
+	pdflatex -interaction=nonstopmode -halt-on-error \
+	         -jobname=$(JOB) \
+	         -output-directory=$(OUTDIR) \
+	         $(MAIN)
+
 clean:
 	latexmk -C -output-directory=$(OUTDIR) --jobname=$(JOB)
 
